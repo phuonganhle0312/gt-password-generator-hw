@@ -124,8 +124,8 @@ function writePassword() { // prompt for password length
         if (userInput === []) {
             alert("Must select atleast one character type")
         }
-        //initialize a pass to store password value
-        var pass=[];
+        // initialize a pass to store password value
+        var pass = [];
         // checks your password length and iterates through userInput
         for (var i = 0; i < passLength; i++) {
             var randomize = Math.floor(Math.random() * userInput.length)
@@ -134,9 +134,11 @@ function writePassword() { // prompt for password length
         pass = pass.join("");
         return pass
     }
+    // the variable password is set to the result of generatePassword()
     var password = generatePassword();
+    // passworText equals the element with the id password
     var passwordText = document.querySelector("#password");
-
+    // set value of password
     passwordText.value = password;
 
 }
