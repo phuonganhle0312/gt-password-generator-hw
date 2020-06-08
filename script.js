@@ -11,6 +11,16 @@ function writePassword() {
         alert ("Invalid Input")
         writePassword();
     }
+
+    // generate password function
+    function generatePassword(){
+        //check for each input: uppercase, lowercase, numbers, special characters
+        var uppers = confirm("Would you like uppercase letters in your password?");
+        var lowers = confirm("Would you like lowercase letters in your password?");
+        var numbers = confirm("Would you like numbers in your password?");
+        var special = confirm("Would you like special characters in your password?");
+    }
+
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
   
